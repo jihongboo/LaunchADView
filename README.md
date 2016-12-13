@@ -3,7 +3,7 @@
 
 原理上参照了xiongoahc的LaunchAD项目，改为了Swift 3.0，并且做了适当优化。
 
-原项目把赋值和显示放在一个方法里面，虽然调用比较方便，但对于图片和跳转URL需要从服务器返回但情况，可能会发生网络异步请求导致app界面早于启动页出现，或者网络同步请求堵塞app启动的情况。LaunchADView将赋值与显示拆分开来，赋值成功与否不会影响启动页的显示，如果本地没有值，则直接跳过启动页或者使用老的启动页。
+原项目把赋值和显示放在一个方法里面，虽然调用比较方便，但对于图片和跳转URL需要从服务器返回的情况，可能会发生网络异步请求导致app界面早于启动页出现，或者网络同步请求堵塞app启动的情况。LaunchADView将赋值与显示拆分开来，赋值成功与否不会影响启动页的显示，如果本地没有值，则直接跳过启动页或者使用老的启动页。
 
 ##截图
 ![image](https://raw.githubusercontent.com/jihongboo/LaunchADView/master/Screen.gif)
@@ -13,9 +13,7 @@
 
 
 ##示例
-```javascript
-  var ihubo = {
-        
+```javascript        
     //  用于加载启动页数据，可放到网络请求的回调中，图片异步缓存
     LaunchADView.setValue(imgURL: "http://cdn.duitang.com/uploads/item/201408/27/20140827062302_ymAJe.jpeg", webURL: "https://www.baidu.com", showTime: 3)
 
@@ -25,8 +23,6 @@
         vc.url = url
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
-  }
 ```
 
 ##感谢
