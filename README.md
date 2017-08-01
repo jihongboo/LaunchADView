@@ -13,7 +13,7 @@
 
 
 ##示例
-```javascript        
+```objective-c
     //  用于加载启动页数据，可放到网络请求的回调中，图片异步缓存
     LaunchADView.setValue(imgURL: "http://cdn.duitang.com/uploads/item/201408/27/20140827062302_ymAJe.jpeg", webURL: "https://www.baidu.com", showTime: 3)
 
@@ -25,7 +25,12 @@
     }
 ```
 
+## 使用
+
+pod 'LaunchADView'
+
 ##感谢
+
 感谢以下的项目
 
 * [LaunchAD](https://github.com/xiongoahc/LaunchAD) 
