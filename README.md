@@ -44,6 +44,10 @@
 
 pod 'LaunchADView'
 
+## 源码解析
+
+http://www.jianshu.com/p/f2a49440ba07
+
 ## 感谢
 
 感谢以下的项目
