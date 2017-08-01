@@ -1,4 +1,12 @@
-# LaunchADView
+<p align="center">
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/github/license/johnlui/Pitaya.svg?style=flat"></a>
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/badge/language-Swift%203-orange.svg"></a>
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/travis/johnlui/Pitaya.svg"></a>
+</p>
+
+## LaunchADView
 
 两行代码加入启动广告页，Swift 3.0，异步加载， 无第三方依赖。Add a launch AD view in your app, with Swift 3.0.
 
