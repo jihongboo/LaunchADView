@@ -1,4 +1,8 @@
 <p align="center">
+    <a href="https://github.com/jihongboo/LaunchADView"><img src="https://github.com/jihongboo/LaunchADView/blob/master/Logo.png?raw=true"></a>
+</p>
+
+<p align="center">
     <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
     <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/github/license/johnlui/Pitaya.svg?style=flat"></a>
     <a href="https://github.com/jihongboo/LaunchADView"><img src="https://img.shields.io/badge/language-Swift%203-orange.svg"></a>
