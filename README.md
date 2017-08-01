@@ -24,7 +24,7 @@
 
 ## 注意
 
-`请勿将`LaunchADView代码放入AppDelegate、UITabbarController中，因为这些类的初始化代码是异步运行的，可能会出现界面早于启动页出现的情况。
+`请勿将`LaunchADView代码放入AppDelegate、UITabbarController中，因为这些类的初始化代码是异步运行的，可能会出现界面早于启动页出现的情况。可以将代码放到启动后第一个显示的controller中。
 
 ## 示例
 
