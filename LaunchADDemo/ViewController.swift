@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LaunchADView
 
 class ViewController: UIViewController {
 

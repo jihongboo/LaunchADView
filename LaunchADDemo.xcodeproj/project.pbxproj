@@ -14,35 +14,8 @@
 		681D3E5C1DFFA221002024A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E5A1DFFA221002024A8 /* LaunchScreen.storyboard */; };
 		681D3E681DFFA2C4002024A8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D3E661DFFA2C4002024A8 /* WebView.swift */; };
 		681D3E691DFFA2C4002024A8 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E671DFFA2C4002024A8 /* WebView.xib */; };
-		FF3505F81F307169000F3DE9 /* LaunchADView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3505EF1F307169000F3DE9 /* LaunchADView.framework */; };
-		FF3506041F307169000F3DE9 /* LaunchADView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3505EF1F307169000F3DE9 /* LaunchADView.framework */; };
-		FF3506051F307169000F3DE9 /* LaunchADView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF3505EF1F307169000F3DE9 /* LaunchADView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF35060D1F307179000F3DE9 /* LaunchADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35060C1F307179000F3DE9 /* LaunchADView.swift */; };
+		FFCB2FA11F308D0F00BB236A /* LaunchADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCB2FA01F308D0F00BB236A /* LaunchADView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FF3505F91F307169000F3DE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 681D3E461DFFA221002024A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF3505EE1F307169000F3DE9;
-			remoteInfo = LaunchADView;
-		};
-		FF3505FB1F307169000F3DE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 681D3E461DFFA221002024A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 681D3E4D1DFFA221002024A8;
-			remoteInfo = LaunchADDemo;
-		};
-		FF3506021F307169000F3DE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 681D3E461DFFA221002024A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF3505EE1F307169000F3DE9;
-			remoteInfo = LaunchADView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FF3505E61F307103000F3DE9 /* Embed Frameworks */ = {
@@ -51,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FF3506051F307169000F3DE9 /* LaunchADView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,13 +40,7 @@
 		681D3E5D1DFFA221002024A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681D3E661DFFA2C4002024A8 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		681D3E671DFFA2C4002024A8 /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
-		FF3505CE1F307102000F3DE9 /* LaunchADView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchADView.h; sourceTree = "<group>"; };
-		FF3505CF1F307102000F3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF3505DB1F307103000F3DE9 /* LaunchADViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchADViewTests.swift; sourceTree = "<group>"; };
-		FF3505DD1F307103000F3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF3505EF1F307169000F3DE9 /* LaunchADView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchADView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF3505F71F307169000F3DE9 /* LaunchADViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchADViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF35060C1F307179000F3DE9 /* LaunchADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchADView.swift; sourceTree = "<group>"; };
+		FFCB2FA01F308D0F00BB236A /* LaunchADView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchADView.swift; path = LaunchADView/LaunchADView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,22 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF3506041F307169000F3DE9 /* LaunchADView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF3505EB1F307169000F3DE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF3505F41F307169000F3DE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF3505F81F307169000F3DE9 /* LaunchADView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				681D3E501DFFA221002024A8 /* LaunchADDemo */,
-				FF3505CD1F307102000F3DE9 /* LaunchADView */,
-				FF3505DA1F307102000F3DE9 /* LaunchADViewTests */,
 				681D3E4F1DFFA221002024A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				681D3E4E1DFFA221002024A8 /* LaunchADDemo.app */,
-				FF3505EF1F307169000F3DE9 /* LaunchADView.framework */,
-				FF3505F71F307169000F3DE9 /* LaunchADViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,40 +81,12 @@
 				681D3E581DFFA221002024A8 /* Assets.xcassets */,
 				681D3E5A1DFFA221002024A8 /* LaunchScreen.storyboard */,
 				681D3E5D1DFFA221002024A8 /* Info.plist */,
+				FFCB2FA01F308D0F00BB236A /* LaunchADView.swift */,
 			);
 			path = LaunchADDemo;
 			sourceTree = "<group>";
 		};
-		FF3505CD1F307102000F3DE9 /* LaunchADView */ = {
-			isa = PBXGroup;
-			children = (
-				FF35060C1F307179000F3DE9 /* LaunchADView.swift */,
-				FF3505CE1F307102000F3DE9 /* LaunchADView.h */,
-				FF3505CF1F307102000F3DE9 /* Info.plist */,
-			);
-			path = LaunchADView;
-			sourceTree = "<group>";
-		};
-		FF3505DA1F307102000F3DE9 /* LaunchADViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				FF3505DB1F307103000F3DE9 /* LaunchADViewTests.swift */,
-				FF3505DD1F307103000F3DE9 /* Info.plist */,
-			);
-			path = LaunchADViewTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		FF3505EC1F307169000F3DE9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		681D3E4D1DFFA221002024A8 /* LaunchADDemo */ = {
@@ -183,49 +101,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				FF3506031F307169000F3DE9 /* PBXTargetDependency */,
 			);
 			name = LaunchADDemo;
 			productName = LaunchADDemo;
 			productReference = 681D3E4E1DFFA221002024A8 /* LaunchADDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FF3505EE1F307169000F3DE9 /* LaunchADView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF3506061F307169000F3DE9 /* Build configuration list for PBXNativeTarget "LaunchADView" */;
-			buildPhases = (
-				FF3505EA1F307169000F3DE9 /* Sources */,
-				FF3505EB1F307169000F3DE9 /* Frameworks */,
-				FF3505EC1F307169000F3DE9 /* Headers */,
-				FF3505ED1F307169000F3DE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LaunchADView;
-			productName = LaunchADView;
-			productReference = FF3505EF1F307169000F3DE9 /* LaunchADView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FF3505F61F307169000F3DE9 /* LaunchADViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF3506091F307169000F3DE9 /* Build configuration list for PBXNativeTarget "LaunchADViewTests" */;
-			buildPhases = (
-				FF3505F31F307169000F3DE9 /* Sources */,
-				FF3505F41F307169000F3DE9 /* Frameworks */,
-				FF3505F51F307169000F3DE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF3505FA1F307169000F3DE9 /* PBXTargetDependency */,
-				FF3505FC1F307169000F3DE9 /* PBXTargetDependency */,
-			);
-			name = LaunchADViewTests;
-			productName = LaunchADViewTests;
-			productReference = FF3505F71F307169000F3DE9 /* LaunchADViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -241,18 +121,6 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CR7BE3B56R;
 						ProvisioningStyle = Automatic;
-					};
-					FF3505EE1F307169000F3DE9 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = CR7BE3B56R;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					FF3505F61F307169000F3DE9 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = CR7BE3B56R;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 681D3E4D1DFFA221002024A8;
 					};
 				};
 			};
@@ -270,8 +138,6 @@
 			projectRoot = "";
 			targets = (
 				681D3E4D1DFFA221002024A8 /* LaunchADDemo */,
-				FF3505EE1F307169000F3DE9 /* LaunchADView */,
-				FF3505F61F307169000F3DE9 /* LaunchADViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,20 +154,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF3505ED1F307169000F3DE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF3505F51F307169000F3DE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,46 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCB2FA11F308D0F00BB236A /* LaunchADView.swift in Sources */,
 				681D3E681DFFA2C4002024A8 /* WebView.swift in Sources */,
 				681D3E541DFFA221002024A8 /* ViewController.swift in Sources */,
 				681D3E521DFFA221002024A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF3505EA1F307169000F3DE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF35060D1F307179000F3DE9 /* LaunchADView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF3505F31F307169000F3DE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FF3505FA1F307169000F3DE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF3505EE1F307169000F3DE9 /* LaunchADView */;
-			targetProxy = FF3505F91F307169000F3DE9 /* PBXContainerItemProxy */;
-		};
-		FF3505FC1F307169000F3DE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 681D3E4D1DFFA221002024A8 /* LaunchADDemo */;
-			targetProxy = FF3505FB1F307169000F3DE9 /* PBXContainerItemProxy */;
-		};
-		FF3506031F307169000F3DE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF3505EE1F307169000F3DE9 /* LaunchADView */;
-			targetProxy = FF3506021F307169000F3DE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		681D3E551DFFA221002024A8 /* Main.storyboard */ = {
@@ -493,96 +313,6 @@
 			};
 			name = Release;
 		};
-		FF3506071F307169000F3DE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = CR7BE3B56R;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LaunchADView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FF3506081F307169000F3DE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = CR7BE3B56R;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LaunchADView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FF35060A1F307169000F3DE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEVELOPMENT_TEAM = CR7BE3B56R;
-				INFOPLIST_FILE = LaunchADViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchADDemo.app/LaunchADDemo";
-			};
-			name = Debug;
-		};
-		FF35060B1F307169000F3DE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEVELOPMENT_TEAM = CR7BE3B56R;
-				INFOPLIST_FILE = LaunchADViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchADDemo.app/LaunchADDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,24 +330,6 @@
 			buildConfigurations = (
 				681D3E611DFFA221002024A8 /* Debug */,
 				681D3E621DFFA221002024A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF3506061F307169000F3DE9 /* Build configuration list for PBXNativeTarget "LaunchADView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF3506071F307169000F3DE9 /* Debug */,
-				FF3506081F307169000F3DE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF3506091F307169000F3DE9 /* Build configuration list for PBXNativeTarget "LaunchADViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF35060A1F307169000F3DE9 /* Debug */,
-				FF35060B1F307169000F3DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

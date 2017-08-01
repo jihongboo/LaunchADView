@@ -1,9 +1,9 @@
 //
 //  LaunchADView.swift
-//  LaunchADDemo
+//  XingWu
 //
-//  Created by 纪洪波 on 2017/8/1.
-//  Copyright © 2017年 LaunchADDemo. All rights reserved.
+//  Created by xingwu  on 2016/12/7.
+//  Copyright © 2016年 Wuyun. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import UIKit
 public class LaunchADView: UIView {
     let screenW = UIScreen.main.bounds.width
     let screenH = UIScreen.main.bounds.height
-    
+
     var adImgView = UIImageView()
     var countBtn = UIButton()
     var webURL: String?
@@ -27,7 +27,7 @@ public class LaunchADView: UIView {
         let view = LaunchADView()
         view.touchBlock = touchBlock
         view.countTimer = Timer.scheduledTimer(timeInterval: 1.0, target: view, selector: #selector(countDown), userInfo: nil, repeats: true)
-        
+
         if let model = LaunchADModel.getLocalModel() {
             if let localPath = model.localPath {
                 do {
@@ -165,7 +165,7 @@ class LaunchADModel: NSObject {
             return nil
         }
     }
-    
+
     static func getLocalModel() -> LaunchADModel? {
         if let dic = UserDefaults.standard.value(forKey: "LaunchADModel") as? [String : String] {
             let model = LaunchADModel()
