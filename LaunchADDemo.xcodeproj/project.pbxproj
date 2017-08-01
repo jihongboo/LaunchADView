@@ -12,9 +12,9 @@
 		681D3E571DFFA221002024A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E551DFFA221002024A8 /* Main.storyboard */; };
 		681D3E591DFFA221002024A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E581DFFA221002024A8 /* Assets.xcassets */; };
 		681D3E5C1DFFA221002024A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E5A1DFFA221002024A8 /* LaunchScreen.storyboard */; };
-		681D3E641DFFA238002024A8 /* LaunchADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D3E631DFFA238002024A8 /* LaunchADView.swift */; };
 		681D3E681DFFA2C4002024A8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D3E661DFFA2C4002024A8 /* WebView.swift */; };
 		681D3E691DFFA2C4002024A8 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681D3E671DFFA2C4002024A8 /* WebView.xib */; };
+		FF6C2E5C1F3066A8006AFCA5 /* LaunchADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C2E5B1F306669006AFCA5 /* LaunchADView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		681D3E581DFFA221002024A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		681D3E5B1DFFA221002024A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681D3E5D1DFFA221002024A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		681D3E631DFFA238002024A8 /* LaunchADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchADView.swift; sourceTree = "<group>"; };
 		681D3E661DFFA2C4002024A8 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		681D3E671DFFA2C4002024A8 /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		FF6C2E5B1F306669006AFCA5 /* LaunchADView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchADView.swift; path = LaunchADView/LaunchADView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		681D3E651DFFA2A0002024A8 /* LaunchADView */ = {
 			isa = PBXGroup;
 			children = (
-				681D3E631DFFA238002024A8 /* LaunchADView.swift */,
+				FF6C2E5B1F306669006AFCA5 /* LaunchADView.swift */,
 			);
 			name = LaunchADView;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 				TargetAttributes = {
 					681D3E4D1DFFA221002024A8 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = YTEYXJ876W;
+						DevelopmentTeam = CR7BE3B56R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681D3E641DFFA238002024A8 /* LaunchADView.swift in Sources */,
+				FF6C2E5C1F3066A8006AFCA5 /* LaunchADView.swift in Sources */,
 				681D3E681DFFA2C4002024A8 /* WebView.swift in Sources */,
 				681D3E541DFFA221002024A8 /* ViewController.swift in Sources */,
 				681D3E521DFFA221002024A8 /* AppDelegate.swift in Sources */,
@@ -281,11 +281,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YTEYXJ876W;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
 				INFOPLIST_FILE = LaunchADDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADDemo.LaunchADDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -295,11 +295,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YTEYXJ876W;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
 				INFOPLIST_FILE = LaunchADDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADDemo.LaunchADDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zac.LaunchADDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
