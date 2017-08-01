@@ -9,10 +9,35 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LaunchADView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>681D3E4D1DFFA221002024A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF3505CB1F307102000F3DE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF3505D31F307102000F3DE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF3505EE1F307169000F3DE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF3505F61F307169000F3DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

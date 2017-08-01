@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaunchADView: UIView {
+public class LaunchADView: UIView {
     let screenW = UIScreen.main.bounds.width
     let screenH = UIScreen.main.bounds.height
 
@@ -23,7 +23,7 @@ class LaunchADView: UIView {
     }
     var touchBlock: ((String?) -> ())?
     
-    static func show(touchBlock: @escaping ((String?) -> ())) {
+    public static func show(touchBlock: @escaping ((String?) -> ())) {
         let view = LaunchADView()
         view.touchBlock = touchBlock
         view.countTimer = Timer.scheduledTimer(timeInterval: 1.0, target: view, selector: #selector(countDown), userInfo: nil, repeats: true)
@@ -45,6 +45,20 @@ class LaunchADView: UIView {
                 self.downloadImage(model: model)
             }
         }
+    }
+    
+    public static func setValue(imgURL: String!, webURL: String, showTime: NSInteger) {
+        if let model = LaunchADModel.getLocalModel() {
+            if model.imgURL == imgURL && model.localPath != nil {
+                return
+            }
+        }
+        
+        let model = LaunchADModel()
+        model.imgURL = imgURL
+        model.webURL = webURL
+        model.showTime = showTime
+        self.downloadImage(model: model)
     }
     
     func countDown() {
@@ -98,22 +112,8 @@ class LaunchADView: UIView {
         })
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    static func setValue(imgURL: String!, webURL: String, showTime: NSInteger) {
-        if let model = LaunchADModel.getLocalModel() {
-            if model.imgURL == imgURL && model.localPath != nil {
-                return
-            }
-        }
-
-        let model = LaunchADModel()
-        model.imgURL = imgURL
-        model.webURL = webURL
-        model.showTime = showTime
-        self.downloadImage(model: model)
     }
     
     static func deleteOldImg(localPath: URL?) {
