@@ -18,7 +18,7 @@ public class LaunchADView: UIView {
     var countTimer: Timer?
     var count: NSInteger? {
         didSet {
-            RunLoop.main.add(countTimer!, forMode: RunLoop.Mode.common)
+            RunLoop.main.add(countTimer!, forMode: .common)
         }
     }
     var touchBlock: ((String?) -> ())?
@@ -33,7 +33,7 @@ public class LaunchADView: UIView {
                 do {
                     let data = try Data.init(contentsOf: localPath)
                     view.adImgView.image = UIImage.init(data: data)
-                    view.countBtn.setTitle("跳过\(model.showTime)", for: UIControl.State.normal)
+                    view.countBtn.setTitle("跳过\(model.showTime)", for: .normal)
                     view.webURL = model.webURL
                     view.count = model.showTime
                     let win = UIApplication.shared.keyWindow!
@@ -92,7 +92,7 @@ public class LaunchADView: UIView {
         countBtn.setTitleColor(.white, for: UIControl.State.normal)
         countBtn.backgroundColor = UIColor.init(white: 0.2, alpha: 0.6)
         countBtn.layer.cornerRadius = 4
-        countBtn.addTarget(self, action: #selector(dismissAction), for: UIControl.Event.touchUpInside)
+        countBtn.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
         self.addSubview(countBtn)
     }
     
