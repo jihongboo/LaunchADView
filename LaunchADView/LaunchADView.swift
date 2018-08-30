@@ -18,7 +18,7 @@ public class LaunchADView: UIView {
     var countTimer: Timer?
     var count: NSInteger? {
         didSet {
-            RunLoop.main.add(countTimer!, forMode: RunLoop.Mode.common)
+            RunLoop.main.add(countTimer!, forMode: .commonModes)
         }
     }
     var touchBlock: ((String?) -> ())?
@@ -33,7 +33,7 @@ public class LaunchADView: UIView {
                 do {
                     let data = try Data.init(contentsOf: localPath)
                     view.adImgView.image = UIImage.init(data: data)
-                    view.countBtn.setTitle("跳过\(model.showTime)", for: UIControl.State.normal)
+                    view.countBtn.setTitle("跳过\(model.showTime)", for: .normal)
                     view.webURL = model.webURL
                     view.count = model.showTime
                     let win = UIApplication.shared.keyWindow!
@@ -67,7 +67,7 @@ public class LaunchADView: UIView {
         }
         count -= 1
         self.count = count
-        countBtn.setTitle("跳过\(count)", for: UIControl.State.normal)
+        countBtn.setTitle("跳过\(count)", for: .normal)
         if count == 0 {
             dismissAction()
         }
@@ -89,10 +89,10 @@ public class LaunchADView: UIView {
         let btnH: CGFloat = 30
         countBtn.frame = CGRect(x: screenW - btnW - 24, y: btnH, width: btnW, height: btnH)
         countBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        countBtn.setTitleColor(.white, for: UIControl.State.normal)
+        countBtn.setTitleColor(.white, for: .normal)
         countBtn.backgroundColor = UIColor.init(white: 0.2, alpha: 0.6)
         countBtn.layer.cornerRadius = 4
-        countBtn.addTarget(self, action: #selector(dismissAction), for: UIControl.Event.touchUpInside)
+        countBtn.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
         self.addSubview(countBtn)
     }
     
@@ -138,7 +138,7 @@ public class LaunchADView: UIView {
                         guard let localPath = model.localPath else {
                             return
                         }
-                        try image.pngData()?.write(to: localPath)
+                        try UIImagePNGRepresentation(image)?.write(to: localPath)
                         print("保存成功")
                         model.save()
                     }catch {
