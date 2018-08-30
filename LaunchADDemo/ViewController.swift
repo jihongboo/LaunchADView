@@ -23,8 +23,6 @@ class ViewController: UIViewController {
             vc.url = url
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-        print("ffasf")
     }
 
     override func didReceiveMemoryWarning() {
